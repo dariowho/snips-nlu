@@ -104,7 +104,7 @@ class LogRegIntentClassifier(IntentClassifier):
         alpha = get_regularization_factor(dataset)
 
         class_weights_arr = compute_class_weight(
-            "balanced", range(none_class + 1), classes)
+            "balanced", classes=range(none_class + 1), y=classes)
         # Re-weight the noise class
         class_weights_arr[-1] *= self.config.noise_reweight_factor
         class_weight = {idx: w for idx, w in enumerate(class_weights_arr)}

@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.20.3] - Under development
+### Added
+- Support for Python 3.9
+
+### Fixed
+- Fixed sklearn compatibility
+
 ## [0.20.2] - 2020-01-15
 ### Added
 - Add intents filter parameter in parsing CLI [#858](https://github.com/snipsco/snips-nlu/pull/858)
